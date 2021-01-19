@@ -10,7 +10,7 @@ class _Env:
         self.state_number = None
 
     def reset(self):
-        self.env.reset()
+        return self.env.reset()
     
     def action(self, act):
         return act
