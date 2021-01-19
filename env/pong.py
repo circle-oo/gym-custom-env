@@ -13,8 +13,8 @@ class Pong(_Env):
         state = super().reset()
         state = np.array(state)
         state = state.mean(axis=2)
-        state = np.resize(state, (84, 84))
-        state = state.reshape((1, 84, 84))
+        #state = np.resize(state, (84, 84))
+        #state = state.reshape((1, 84, 84))
         return state
     
     def action(self, act):
