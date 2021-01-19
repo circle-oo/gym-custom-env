@@ -2,7 +2,6 @@ import gym
 import numpy as np
 
 from env.baseenv import _Env
-from env.wrappers import make_atari, wrap_deepmind, wrap_pytorch
 
 class Pong(_Env):
     def __init__(self, render):
