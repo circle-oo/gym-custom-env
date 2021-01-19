@@ -9,6 +9,9 @@ class _Env:
         self.action_number = None
         self.state_number = None
 
+    def close(self):
+        self.env.close()
+
     def reset(self):
         return self.env.reset()
     
